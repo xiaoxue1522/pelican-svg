@@ -1,0 +1,373 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1120" height="840" viewBox="0 0 1120 840" role="img" aria-labelledby="title desc">
+  <title id="title">自行车骑鹈鹕 · 循环动画</title>
+  <desc id="desc">一辆系着珊瑚红围巾的金色自行车，骑在飞越海面的鹈鹕背上。鹈鹕持续振翅，车轮和脚踏转动，围巾随风起伏，海浪与云朵缓缓流动。动画每 4.8 秒循环。</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#e8f3df"/>
+      <stop offset=".7" stop-color="#b7ded7"/>
+      <stop offset="1" stop-color="#9dcfc7"/>
+    </linearGradient>
+    <linearGradient id="sunlight" x2="0" y2="1">
+      <stop stop-color="#ffe8a5"/>
+      <stop offset="1" stop-color="#f7ab66"/>
+    </linearGradient>
+    <linearGradient id="sea" x2="0" y2="1">
+      <stop stop-color="#8bc9c5"/>
+      <stop offset="1" stop-color="#5ba8ad"/>
+    </linearGradient>
+    <linearGradient id="plumage" x1=".38" y1=".2" x2=".63" y2="1">
+      <stop stop-color="#fffdf2"/>
+      <stop offset=".57" stop-color="#f7f2de"/>
+      <stop offset="1" stop-color="#d4ded6"/>
+    </linearGradient>
+    <linearGradient id="far-feathers" x1=".85" y1=".12" x2=".28" y2="1">
+      <stop stop-color="#eef2e0"/>
+      <stop offset="1" stop-color="#8eafb2"/>
+    </linearGradient>
+    <linearGradient id="near-feathers" x1=".76" y1=".18" x2=".3" y2="1">
+      <stop stop-color="#fffbed"/>
+      <stop offset=".53" stop-color="#e2e8db"/>
+      <stop offset="1" stop-color="#b0c6c5"/>
+    </linearGradient>
+    <linearGradient id="flight-feathers" x1=".76" y1=".12" x2=".22" y2="1">
+      <stop stop-color="#506f7b"/>
+      <stop offset="1" stop-color="#244457"/>
+    </linearGradient>
+    <linearGradient id="pouch" x1=".68" y1=".2" x2=".22" y2="1">
+      <stop stop-color="#ffd996"/>
+      <stop offset="1" stop-color="#e58b5a"/>
+    </linearGradient>
+    <linearGradient id="bill" x1=".3" y1="0" x2=".43" y2="1">
+      <stop stop-color="#ffdf95"/>
+      <stop offset="1" stop-color="#f5aa58"/>
+    </linearGradient>
+    <linearGradient id="enamel" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#ffe084"/>
+      <stop offset="1" stop-color="#f6a54c"/>
+    </linearGradient>
+    <clipPath id="skyline">
+      <circle cx="552" cy="437" r="358"/>
+    </clipPath>
+    <path id="upper-wing-shape" d="M487 433
+      C443 400 421 360 387 319 C340 262 273 217 190 190
+      C172 185 168 192 178 205 C195 227 224 248 257 264
+      C234 256 212 246 193 245 C177 244 176 253 185 264
+      C205 288 244 303 281 310 C256 308 234 302 215 305
+      C200 307 199 317 211 327 C233 345 274 353 312 355
+      C290 359 270 355 256 361 C243 366 247 375 260 382
+      C288 397 326 403 362 400 C344 408 330 408 318 415
+      C306 422 312 432 326 436 C383 456 446 461 487 446Z"/>
+    <clipPath id="upper-wing-clip">
+      <use xlink:href="#upper-wing-shape"/>
+    </clipPath>
+    <path id="lower-wing-shape" d="M620 481
+      C601 452 559 441 514 452 C471 463 433 488 391 518
+      C344 552 294 577 230 596 C204 604 174 606 162 618
+      C154 629 168 638 192 638 C223 639 251 631 278 623
+      C254 637 225 648 205 658 C190 666 191 678 207 681
+      C235 684 272 669 301 656 C279 674 255 688 245 700
+      C237 710 241 719 257 717 C286 713 323 690 348 670
+      C336 688 316 708 313 717 C309 728 320 733 334 726
+      C363 712 389 684 408 659 C403 675 397 686 397 695
+      C398 710 408 710 422 698 C446 676 462 654 475 633
+      C474 647 469 655 472 662 C477 673 489 663 501 649
+      C532 615 557 583 579 550 C601 522 613 504 620 481Z"/>
+    <clipPath id="lower-wing-clip">
+      <use xlink:href="#lower-wing-shape"/>
+    </clipPath>
+    <path id="bike-tubes" d="M394 365L477 273L515 365Z
+      M477 273C516 278 550 268 586 259L600 295L515 365"/>
+    <path id="front-fork" d="M600 295C608 323 615 346 636 365"/>
+    <g id="wheel" fill="none">
+      <circle r="57" stroke="#19394b" stroke-width="17"/>
+      <circle r="57" stroke="#34596a" stroke-width="10"/>
+      <circle r="51" stroke="#f9e7bd" stroke-width="3"/>
+      <path d="M-55-21A59 59 0 0 1 12-58" stroke="#789399" stroke-width="2.6"/>
+      <g id="wheel-spokes">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360"
+                          dur="1.2s" repeatCount="indefinite"/>
+        <path d="M0-49V49M-49 0H49M-35-35L35 35M35-35L-35 35"
+              stroke="#28566a" stroke-width="2.4" opacity=".57"/>
+        <path d="M22-33L33-22" stroke="#f7bd62" stroke-width="5.5"/>
+      </g>
+    </g>
+  </defs>
+
+  <g id="coastal-backdrop">
+    <circle cx="552" cy="437" r="364" fill="#fcf3db"/>
+    <g clip-path="url(#skyline)">
+      <circle cx="552" cy="437" r="358" fill="url(#sky)"/>
+      <circle cx="704" cy="260" r="119" fill="url(#sunlight)"/>
+      <path d="M609 227A101 101 0 0 1 735 163" fill="none"
+            stroke="#fff0b8" stroke-width="2.5" opacity=".86"/>
+      <g id="clouds" fill="#f7fbeb" opacity=".78">
+        <animateTransform attributeName="transform" type="translate"
+                          values="8 0;-16 0;8 0" dur="4.8s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;.5;1"
+                          keySplines=".42 0 .58 1;.42 0 .58 1"/>
+        <path d="M285 178H323C326 168 338 164 350 168C356 151 389 151 399 172
+                 C415 168 429 175 429 182H285C280 182 280 178 285 178Z"/>
+        <path d="M757 269H791C796 258 812 256 822 264C833 247 859 250 866 266
+                 C882 261 894 266 897 274H757C751 274 752 269 757 269Z"/>
+        <path d="M231 391H260C264 380 278 375 288 383C302 378 312 386 313 394H231Z"/>
+      </g>
+      <path d="M157 616C280 585 346 619 452 617C562 615 607 579 727 590
+               C814 598 861 625 941 602V831H157Z" fill="#a2d5ca"/>
+      <path d="M145 657C245 629 327 658 446 654C550 650 650 619 734 633
+               C829 650 884 669 952 634V835H145Z" fill="url(#sea)"/>
+      <path d="M141 743C247 714 354 753 457 746C571 739 649 700 771 718
+               C848 729 906 745 954 729V844H141Z" fill="#539ea9" opacity=".47"/>
+      <g id="wave-glints" fill="none" stroke="#e1f3df" stroke-width="3" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate"
+                          values="0 0;-32 3;0 0" dur="2.4s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;.5;1"
+                          keySplines=".42 0 .58 1;.42 0 .58 1"/>
+        <path d="M693 608Q727 606 756 615M779 620L795 623" opacity=".8"/>
+        <path d="M584 665C619 654 656 652 695 655M716 658L738 662" opacity=".82"/>
+        <path d="M447 741Q502 746 558 730M575 726L596 721" opacity=".71"/>
+        <path d="M744 690Q773 692 809 700M825 703L842 705" opacity=".72"/>
+        <path d="M627 755Q658 749 684 749" opacity=".65"/>
+      </g>
+    </g>
+    <circle cx="552" cy="437" r="357" fill="none" stroke="#5b9290" stroke-opacity=".45" stroke-width="2"/>
+    <g fill="none" stroke="#5b9290" stroke-linecap="round">
+      <g id="wind-left">
+        <animateTransform attributeName="transform" type="translate"
+                          from="26 0" to="-40 0" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.65;.65;0"
+                 keyTimes="0;.18;.75;1" dur="1.2s" repeatCount="indefinite"/>
+        <path d="M116 423H202M143 438H181M102 460H147" stroke-width="3"/>
+      </g>
+      <g id="wind-right">
+        <animateTransform attributeName="transform" type="translate"
+                          from="24 0" to="-48 0" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.6;.6;0"
+                 keyTimes="0;.18;.75;1" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M815 504H936M889 519H961M862 536H911" stroke-width="2.8"/>
+      </g>
+    </g>
+    <path d="M508 150V168M499 159H517M860 200V219M851 210H869" fill="none"
+          stroke="#fffae6" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="465" cy="128" r="3" fill="#f5bc78"/>
+    <circle cx="835" cy="190" r="3" fill="#f5bc78"/>
+  </g>
+
+  <g id="flight">
+    <animateTransform attributeName="transform" type="translate"
+                      values="0 0;0 -10;0 0;0 8;0 0" dur="2.4s" repeatCount="indefinite"
+                      calcMode="spline" keyTimes="0;.25;.5;.75;1"
+                      keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+  <g id="pelican" stroke="#19394b" stroke-linecap="round" stroke-linejoin="round">
+    <g id="upper-wing">
+      <animateTransform attributeName="transform" type="rotate"
+                        values="14 481 436;-10 481 436;14 481 436" dur="1.2s"
+                        repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                        keySplines=".42 0 .58 1;.42 0 .58 1"/>
+      <use xlink:href="#upper-wing-shape" fill="url(#far-feathers)" stroke="none"/>
+      <g clip-path="url(#upper-wing-clip)" stroke="none">
+        <path d="M152 174L232 194Q247 216 245 236Q270 245 269 267
+                 Q297 276 297 298Q327 305 328 328Q355 334 364 359
+                 Q394 369 403 405L404 461L151 444Z" fill="url(#flight-feathers)"/>
+        <path d="M239 208C337 254 392 329 432 391C376 332 325 275 244 230Z"
+              fill="#f6f5e8" opacity=".6"/>
+      </g>
+      <path d="M202 210Q263 256 326 285M208 262Q269 301 335 312
+               M230 321Q284 343 354 346M278 372Q324 385 373 380"
+            fill="none" stroke="#cfe2d7" stroke-width="2.8" opacity=".52"/>
+      <use xlink:href="#upper-wing-shape" fill="none" stroke-width="6"/>
+    </g>
+
+    <g id="tail-and-feet" stroke-width="5.5">
+      <path d="M338 471C277 477 226 479 170 466C149 461 139 467 154 482
+               C174 502 214 512 251 514C222 522 194 521 177 514
+               C164 510 162 517 174 529C203 554 272 555 326 543L362 517Z"
+            fill="url(#far-feathers)"/>
+      <path d="M183 483Q233 503 291 501M203 532Q242 541 282 530"
+            fill="none" stroke="#597c86" stroke-width="3"/>
+      <path d="M671 568Q676 590 657 603L631 611Q619 618 632 625
+               Q651 632 676 619L692 624Q703 626 704 618Q704 611 693 603L701 577Z"
+            fill="#d98e6c"/>
+      <path d="M622 579Q629 600 611 613L585 623Q574 631 587 638
+               Q607 646 630 631L645 636Q656 638 657 631Q657 624 646 615L652 586Z"
+            fill="#f2ac73"/>
+      <path d="M587 629Q603 631 619 622M639 617L646 627" fill="none" stroke="#bd6f51" stroke-width="2.7"/>
+    </g>
+
+    <g id="body">
+      <path d="M282 501C325 477 353 450 394 430C445 405 509 405 575 418
+               C636 429 681 447 714 429C741 414 735 377 745 346
+               C749 330 757 318 770 310L750 299Q768 297 781 304L769 291
+               Q787 292 798 300C818 296 833 302 844 313C862 331 857 349 851 361
+               C845 371 824 378 812 381C801 385 798 396 797 412
+               C793 457 767 509 720 546C671 585 610 607 540 613
+               C444 625 366 595 320 551C307 539 291 524 282 501Z"
+            fill="url(#plumage)" stroke-width="6.5"/>
+      <path d="M351 548C428 597 521 590 615 565C715 538 770 479 780 421
+               C787 383 788 372 815 361C829 355 837 346 845 334
+               C846 359 832 370 811 376C796 381 793 395 792 412
+               C786 465 757 510 716 542C672 577 614 600 539 608
+               C462 618 394 600 351 548Z" fill="#bdd2cb" stroke="none" opacity=".66"/>
+      <path d="M712 455C755 435 756 394 761 364Q767 338 788 327"
+            fill="none" stroke="#fffdf3" stroke-width="7" opacity=".85"/>
+      <path d="M666 560Q704 541 729 515M651 577Q668 570 680 563"
+            fill="none" stroke="#7ea1a4" stroke-width="2.8" opacity=".75"/>
+    </g>
+
+    <g id="saddle-blanket">
+      <path d="M589 441L611 445C628 487 618 535 592 569L570 565
+               C595 532 607 488 589 441Z" fill="#3d7277" stroke-width="4.8"/>
+      <path d="M606 455C620 489 612 525 593 552" fill="none" stroke="#a8cec0" stroke-width="2.3"/>
+      <path d="M356 437C388 420 450 411 503 413C563 414 617 423 659 431
+               C678 435 688 443 681 453C671 467 652 465 631 462
+               C560 452 505 455 442 465C401 472 370 477 354 460
+               C346 452 348 443 356 437Z" fill="#3d7277" stroke-width="5.5"/>
+      <path d="M359 448C379 463 411 459 442 454C511 443 567 443 633 453
+               Q664 459 674 449" fill="none" stroke="#f3ce84" stroke-width="3.5"/>
+      <path d="M649 443L655 439L661 443L655 447Z" fill="#f3ce84" stroke="none"/>
+    </g>
+
+    <g id="lower-wing">
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-12 620 481;17 620 481;-12 620 481" dur="1.2s"
+                        repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                        keySplines=".42 0 .58 1;.42 0 .58 1"/>
+      <use xlink:href="#lower-wing-shape" fill="url(#near-feathers)" stroke="none"/>
+      <g clip-path="url(#lower-wing-clip)" stroke="none">
+        <path d="M142 614C178 599 210 594 245 577Q262 583 268 605
+                 Q287 599 304 622Q325 614 344 635Q366 627 386 640
+                 Q408 627 424 635Q444 617 456 623Q487 604 505 587
+                 L527 600L528 757H142Z" fill="url(#flight-feathers)"/>
+        <path d="M260 588C365 549 425 491 503 465C538 453 577 452 603 468
+                 C557 459 522 476 481 493C400 527 339 575 260 588Z"
+              fill="#fffdf2" opacity=".81"/>
+      </g>
+      <g fill="none" stroke-width="3.3">
+        <path d="M266 604Q350 579 416 523M305 621Q388 597 468 524
+                 M347 634Q437 602 513 523M389 639Q478 593 547 513"
+              stroke="#73989d" opacity=".72"/>
+        <path d="M180 625Q219 624 256 610M210 669Q246 657 278 642
+                 M257 705Q286 688 317 663M327 715Q355 694 379 665
+                 M411 690Q436 660 450 639"
+              stroke="#b6cdca" opacity=".53"/>
+        <path d="M487 483Q504 474 525 470M519 490Q536 482 550 481"
+              stroke="#a7bfbc" opacity=".76"/>
+      </g>
+      <use xlink:href="#lower-wing-shape" fill="none" stroke-width="6.5"/>
+    </g>
+
+    <g id="face">
+      <path d="M831 343C859 348 890 352 924 356L1051 360
+               C1024 380 991 399 950 415C918 428 881 425 861 407
+               C844 393 832 371 831 343Z" fill="url(#pouch)" stroke-width="6"/>
+      <path d="M860 367C901 381 964 376 1005 368C972 391 909 405 878 389
+               C871 385 865 376 860 367Z" fill="#ffe2a7" stroke="none" opacity=".64"/>
+      <path d="M851 370Q855 391 872 402" fill="none" stroke="#b96c50" stroke-width="2.7"/>
+      <path d="M832 331C851 319 873 319 894 323L1044 347
+               C1054 348 1061 354 1055 362Q1050 370 1041 370L1045 363
+               C987 364 930 360 874 356C851 355 838 350 832 344Z"
+            fill="url(#bill)" stroke-width="6"/>
+      <path d="M887 330L1037 352" fill="none" stroke="#fff0b5" stroke-width="3.6"/>
+      <path d="M861 334Q866 333 870 335" fill="none" stroke="#865c47" stroke-width="3.2"/>
+      <g transform="translate(810 332)">
+        <g id="eye-blink">
+          <animateTransform attributeName="transform" type="scale"
+                            values="1 1;1 1;1 .08;1 1;1 1" keyTimes="0;.85;.875;.9;1"
+                            dur="4.8s" repeatCount="indefinite"/>
+          <ellipse cx="-1" cy="0" rx="12" ry="13" fill="#efd3a3" stroke="none"/>
+          <ellipse cx="2" cy="-1" rx="7.3" ry="8.6" fill="#19394b" stroke="none"/>
+          <circle cx="4.5" cy="-4" r="2.6" fill="#fffdf3" stroke="none"/>
+        </g>
+      </g>
+      <path d="M798 316Q808 310 818 315" fill="none" stroke-width="3.3"/>
+      <path d="M784 351Q797 357 808 352" fill="none" stroke="#dfc39c" stroke-width="3.4"/>
+    </g>
+  </g>
+
+  <g id="bicycle" stroke="#19394b" stroke-linecap="round" stroke-linejoin="round">
+    <g id="scarf">
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-2 458 242;2 458 242;-2 458 242" dur=".8s"
+                        repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                        keySplines=".42 0 .58 1;.42 0 .58 1"/>
+      <path d="M458 242C428 254 406 254 379 248C389 265 410 269 432 261
+               Q447 256 463 250Z" fill="#c75e54" stroke-width="4.8">
+        <animate attributeName="d" dur="1.2s" repeatCount="indefinite"
+                 calcMode="spline" keyTimes="0;.5;1" keySplines=".42 0 .58 1;.42 0 .58 1"
+                 values="M458 242C428 254 406 254 379 248C389 265 410 269 432 261Q447 256 463 250Z;
+                         M458 242C428 251 406 263 379 261C389 278 410 273 432 263Q447 256 463 250Z;
+                         M458 242C428 254 406 254 379 248C389 265 410 269 432 261Q447 256 463 250Z"/>
+      </path>
+      <path d="M456 236C427 233 416 216 390 214C363 212 346 230 315 225
+               C329 240 352 245 374 239C403 231 423 249 453 249Z"
+            fill="#e87863" stroke-width="4.8">
+        <animate attributeName="d" dur="1.2s" repeatCount="indefinite"
+                 calcMode="spline" keyTimes="0;.5;1" keySplines=".42 0 .58 1;.42 0 .58 1"
+                 values="M456 236C427 233 416 216 390 214C363 212 346 230 315 225C329 240 352 245 374 239C403 231 423 249 453 249Z;
+                         M456 236C427 233 416 223 390 224C363 224 346 210 315 217C329 233 352 242 374 240C403 239 423 251 453 249Z;
+                         M456 236C427 233 416 216 390 214C363 212 346 230 315 225C329 240 352 245 374 239C403 231 423 249 453 249Z"/>
+      </path>
+      <path d="M332 229C352 232 365 223 386 222Q403 221 420 231"
+            fill="none" stroke="#ffb790" stroke-width="2.8">
+        <animate attributeName="d" dur="1.2s" repeatCount="indefinite"
+                 calcMode="spline" keyTimes="0;.5;1" keySplines=".42 0 .58 1;.42 0 .58 1"
+                 values="M332 229C352 232 365 223 386 222Q403 221 420 231;
+                         M332 225C352 226 365 232 386 232Q403 232 420 239;
+                         M332 229C352 232 365 223 386 222Q403 221 420 231"/>
+      </path>
+    </g>
+
+    <use xlink:href="#wheel" x="394" y="365"/>
+    <use xlink:href="#wheel" x="636" y="365"/>
+
+    <path d="M394 356L515 347A18 18 0 1 1 515 383L394 374A9 9 0 0 1 394 356Z"
+          fill="#47707b" stroke-width="4"/>
+    <path d="M395 373L512 381" fill="none" stroke="#95adab" stroke-width="2"/>
+    <path d="M477 273L465 236M600 295L581 245Q575 228 589 222L612 212
+             Q622 207 634 213" fill="none" stroke-width="12"/>
+    <path d="M477 273L465 236M600 295L581 245Q575 228 589 222L612 212
+             Q622 207 634 213" fill="none" stroke="#b8ccc4" stroke-width="5.8"/>
+    <path d="M627 217C653 233 645 258 611 275" fill="none" stroke-width="2.8"/>
+    <path d="M619 210Q630 207 642 215" fill="none" stroke-width="11"/>
+    <path d="M623 208Q631 207 637 211" fill="none" stroke="#708989" stroke-width="2.6"/>
+    <path d="M436 230C444 225 463 231 475 230C484 228 493 227 496 231
+             C500 238 486 244 470 245C452 247 437 243 434 237Q431 233 436 230Z"
+          fill="#28495a" stroke-width="4.6"/>
+    <path d="M442 234Q458 239 474 235" fill="none" stroke="#a6b3a2" stroke-width="2.6"/>
+    <path d="M460 240Q467 238 472 244Q472 250 467 254Q458 253 454 248Z"
+          fill="#e87863" stroke-width="3.7"/>
+
+    <g fill="none">
+      <use xlink:href="#bike-tubes" stroke-width="16"/>
+      <use xlink:href="#front-fork" stroke-width="14"/>
+      <use xlink:href="#bike-tubes" stroke="url(#enamel)" stroke-width="10"/>
+      <use xlink:href="#front-fork" stroke="#f8bb60" stroke-width="8"/>
+      <path d="M487 273Q528 274 570 263M603 304Q611 330 622 346"
+            stroke="#ffeaa3" stroke-width="2.7"/>
+      <path d="M600 283L617 271" stroke-width="6"/>
+    </g>
+    <path d="M613 260Q625 251 641 257L645 271Q632 279 615 272Z"
+          fill="#356377" stroke-width="4.5"/>
+    <path d="M640 256Q652 254 652 264Q652 273 643 273Z"
+          fill="#ffe6a2" stroke-width="3.7"/>
+
+    <circle cx="394" cy="365" r="7.5" fill="#ffe2a3" stroke-width="4"/>
+    <circle cx="636" cy="365" r="7.5" fill="#ffe2a3" stroke-width="4"/>
+    <circle cx="515" cy="365" r="17" fill="#315a6c" stroke-width="4.6"/>
+    <circle cx="515" cy="365" r="10.5" fill="none" stroke="#b2c9c2" stroke-width="2.5"/>
+    <g id="crank">
+      <animateTransform attributeName="transform" type="rotate" from="0 515 365"
+                        to="360 515 365" dur="1.2s" repeatCount="indefinite"/>
+      <path d="M515 365L540 386" fill="none" stroke-width="8"/>
+      <path d="M516 364L538 382" fill="none" stroke="#b8ccc4" stroke-width="2.7"/>
+      <g id="pedal">
+        <animateTransform attributeName="transform" type="rotate" from="0 541 387"
+                          to="-360 541 387" dur="1.2s" repeatCount="indefinite"/>
+        <path d="M530 387H553" fill="none" stroke-width="8.5"/>
+        <path d="M534 386H549" fill="none" stroke="#f6c477" stroke-width="2.5"/>
+      </g>
+    </g>
+    <circle cx="515" cy="365" r="3.2" fill="#f9dfa8" stroke="none"/>
+  </g>
+  </g>
+</svg>
